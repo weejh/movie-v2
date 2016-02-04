@@ -2,6 +2,7 @@ import {loginStat} from 'login-status'
 
 export class Home {
   heading = 'Home';
+  logOut = true;
 
   //Getters can't be directly observed, so they must be dirty checked.
   //However, if you tell Aurelia the dependencies, it no longer needs to dirty check the property.
@@ -17,6 +18,7 @@ export class Home {
       // this.time = new Date(JSON.parse(window.localStorage.getItem('profile')).updated_at)
       this.picture = JSON.parse(window.localStorage.getItem('profile')).picture
       this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
+      this.logOut = !this.logOut
     }
   }
 }

@@ -9,14 +9,17 @@ import {logOut} from 'logout'
 export class Login {
 
   lock = new Auth0Lock('NGW5BkUSyZSeAoPy0yC8RJMapLG4aXVT', 'weejh.auth0.com');
-  logOut = true;
+  logOut = false;
+  // name = JSON.parse(window.localStorage.getItem('profile')).nickname || '';
 
   activate() {
     console.log('login activate');
-    if (!loginStat()) {
+    if (loginStat()) {
     this.login;
-    this.logOut = !this.logOut}
+    this.logOut = !this.logOut
+  }
     // } else {
+    //   this.logout;
     //   console.log('already login');
     //   this.logOut = !this.LogOut
     // }
