@@ -22,6 +22,7 @@ export class Login {
       else {
         localStorage.setItem('profile', JSON.stringify(profile));
         localStorage.setItem('id_token', token);
+        window.history.go(-1)
         // console.log('login');
         // console.log(window.location);
       }
