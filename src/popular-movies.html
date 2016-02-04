@@ -1,0 +1,20 @@
+<template>
+  <require from="blur-image"></require>
+  <section class="au-animate">
+    <h2>${heading}</h2>
+    <div class="row au-stagger">
+      <div class="col-sm-6 col-md-3 card-container au-animate" repeat.for="movie of popularMovies">
+          <div class="avatar">
+            <img src.bind="'http://image.tmdb.org/t/p/w185/' + movie.poster_path" crossorigin ref="image"/>
+          </div>
+          <div class="content">
+            <p class="name">${movie.title}</p>
+            <div class="links">
+              <p><a href="https://www.youtube.com/" target="_blank" class="btn btn-default"  click.delegate="playMovie(movie.id)">See More</a></p>
+              <p><a target="_blank" class="btn btn-default" href="https://www.youtube.com/"></span>Wait For It</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</template>
