@@ -140,8 +140,16 @@
 
                 <!-- <h1 style="line-height:1.0">The Movie Diary</h1>
                 <p>Take note of all the upcoming movies and add them to your wishlist.<br> -->
-                  <p>Log in to check out all the features!</p>
-                <a id="login" click.delegate="login()" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Log In</a>
+                  <p show.bind="logOut">Log in to check out all the features!</p>
+                  <p show.bind="!logOut" >Time for kopi?</p>
+                  <!-- <p show.bind="logOut" >${name}, time for kopi?</p> -->
+                <a id="login" click.delegate="login()" show.bind="logOut" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Login</a>
+
+                <a id="logout" click.delegate="logout()" show.bind="!logOut" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Yes!</a>
+                <!-- <button class="btn btn-sm btn-primary" show.bind="item.enabled"  click.delegate="item.toggleEnabled()">Disable</button>
+                <button class="btn btn-sm btn-warning" show.bind="!item.enabled" click.delegate="item.toggleEnabled()">Enable</button> -->
+
+
               </div>
             </div>
           </div>

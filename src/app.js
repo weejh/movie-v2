@@ -21,12 +21,13 @@ export class App {
         name: 'login',
         moduleId: 'login',
         nav: true,
-        title: 'Login'},
-      { route: 'logout',
-        name: 'logout',
-        moduleId: 'logout',
-        nav: true,
-        title: 'Logout' }
+        title: 'Status'}
+        // ,
+      // { route: 'logout',
+      //   name: 'logout',
+      //   moduleId: 'logout',
+      //   nav: true,
+      //   title: 'Logout' }
     ]);
 
     this.router = router;

@@ -1,7 +1,7 @@
 <template>
   <style>
   #profile-picture {
-    /*background:url(${picture});*/
+    background:url(${picture});
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -13,15 +13,21 @@
     <div class="container">
       <div class="demo-card-wide mdl-card mdl-shadow--2dp">
         <div id="profile-picture" class="mdl-card__title" >
-          <img id="profile-picture" src="${picture}" alt="" />
+          <!-- <img id="profile-picture" src="${picture}" alt="" /> -->
           <h2 class="mdl-card__title-text">${username}</h2>
         </div>
-        <div class="mdl-card__supporting-text">
+        <div show.bind="logOut" class="mdl-card__supporting-text">
           Check out the trending movies right here and add them to your wishlist so you don't miss them!
         </div>
+        <div show.bind="!logOut" class="mdl-card__supporting-text">
+          It is time for kopi ...
+        </div>
         <div class="mdl-card__actions mdl-card--border">
-          <a href="/#/login" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          <a href="/#/login" show.bind="logOut" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
             Get Started
+          </a>
+          <a href="/#/login" show.bind="!logOut" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Get my kopi
           </a>
         </div>
       </div>

@@ -211,7 +211,7 @@ System.config({
     }
   },
   bundles: {
-    "app-build-e6c4c00a1e.js": [
+    "app-build-aeb1f6ebda.js": [
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
       "blur-image.js",
@@ -225,11 +225,7 @@ System.config({
       "main.js",
       "nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
       "popular-movies.html!github:systemjs/plugin-text@0.0.3.js",
-      "popular-movies.js",
-      "users.html!github:systemjs/plugin-text@0.0.3.js",
-      "users.js",
-      "welcome.html!github:systemjs/plugin-text@0.0.3.js",
-      "welcome.js"
+      "popular-movies.js"
     ],
     "aurelia-f07d9e63de.js": [
       "github:components/jquery@2.2.0.js",
@@ -335,17 +331,13 @@ System.config({
       "login-status.js"
     ],
     "login.js": [
-      "npm:aurelia-router@1.0.0-beta.1.1.0.js"
+      "npm:aurelia-router@1.0.0-beta.1.1.0.js",
+      "login-status.js"
     ],
     "main.js": [
       "github:twbs/bootstrap@3.3.6.js"
     ],
     "popular-movies.js": [
-      "npm:aurelia-framework@1.0.0-beta.1.1.1.js",
-      "npm:aurelia-fetch-client@1.0.0-beta.1.1.0.js",
-      "github:github/fetch@0.10.1.js"
-    ],
-    "users.js": [
       "npm:aurelia-framework@1.0.0-beta.1.1.1.js",
       "npm:aurelia-fetch-client@1.0.0-beta.1.1.0.js",
       "github:github/fetch@0.10.1.js"
