@@ -211,7 +211,7 @@ System.config({
     }
   },
   bundles: {
-    "app-build-c69b746146.js": [
+    "app-build-aeb1f6ebda.js": [
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
       "blur-image.js",
@@ -332,8 +332,7 @@ System.config({
     ],
     "login.js": [
       "npm:aurelia-router@1.0.0-beta.1.1.0.js",
-      "login-status.js",
-      "logout.js"
+      "login-status.js"
     ],
     "main.js": [
       "github:twbs/bootstrap@3.3.6.js"
