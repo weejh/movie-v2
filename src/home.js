@@ -10,7 +10,7 @@ export class Home {
 
   activate() {
     if (!loginStat()) {
-      this.username = 'Time to login'
+      this.username = ''
       this.picture = 'http://tse1.mm.bing.net/th?id=OIP.Me6a9845f4c2e2f7f2c43c833bbcec9ddo0&w=203&h=142&c=7&rs=1&qlt=90&o=4&pid=1.1'
       // this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
     } else {
