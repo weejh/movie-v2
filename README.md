@@ -1,4 +1,4 @@
-# Aurelia Movies App
+# Aurelia Movies App v2
 Project 4 of our Bootcamp, we decided to create a movie app that could keep track of popular movies and also allow people to keep track of them via a wish list. After hearing a little about Aurelia, we decided to dabble a little more into it and learn about its functions.
 
 ## Technologies Used
