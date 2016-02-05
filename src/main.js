@@ -13,5 +13,6 @@ export function configure(aurelia) {
   //aurelia.use.plugin('aurelia-html-import-template-loader')
   window.history.replaceState(null, null, '/')
   window.localStorage.clear()
+  window.localStorage.setItem('rotate', 'true');
   aurelia.start().then(a => a.setRoot());
 }
